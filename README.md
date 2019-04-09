@@ -1,5 +1,7 @@
-aldeed:tabular
+ecarlotti:tabular
 =========================
+
+>Forked from [aldeed:tabular](https://github.com/aldeed/meteor-tabular) - I needed to update datatables.net version and I also found >some interesting fixes in other forks of this that I wanted to apply to my project.
 
 A Meteor package that creates reactive [DataTables](http://datatables.net/) in an efficient way, allowing you to display the contents of enormous collections without impacting app performance.
 
