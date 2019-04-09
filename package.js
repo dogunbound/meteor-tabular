@@ -1,14 +1,14 @@
 /* global Package, Npm */
 
 Package.describe({
-  name: 'aldeed:tabular',
+  name: 'ecarlotti:tabular',
   summary: 'Datatables for large or small datasets in Meteor',
-  version: '2.1.1',
-  git: 'https://github.com/aldeed/meteor-tabular.git'
+  version: '2.1.2',
+  git: 'https://github.com/ecarlotti/meteor-tabular.git'
 });
 
 Npm.depends({
-  'datatables.net': '1.10.12'
+  'datatables.net': '1.10.19'
 });
 
 Package.onUse(function(api) {
@@ -30,7 +30,7 @@ Package.onUse(function(api) {
   // before any tabular tables are rendered
   api.use(['jquery'], 'client', {weak: true});
 
-  api.use(['meteorhacks:subs-manager@1.2.0'], ['client', 'server'], {weak: true});
+  api.use(['meteorhacks:subs-manager'], ['client', 'server'], {weak: true});
 
   api.mainModule('server/main.js', 'server');
   api.mainModule('client/main.js', 'client');
