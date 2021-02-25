@@ -1,7 +1,7 @@
 /* global Package, Npm */
 
 Package.describe({
-  name: 'ecarlotti:tabular',
+  name: 'aldeed:tabular',
   summary: 'Datatables for large or small datasets in Meteor',
   version: '2.1.2',
   git: 'https://github.com/ecarlotti/meteor-tabular.git'
@@ -28,7 +28,7 @@ Package.onUse(function(api) {
   // jquery is a weak reference in case you want to use a different package or
   // pull it in another way, but regardless you need to make sure it is loaded
   // before any tabular tables are rendered
-  api.use(['jquery'], 'client', {weak: true});
+  api.use(['jquery@3.0.0'], 'client', {weak: true});
 
   api.use(['meteorhacks:subs-manager'], ['client', 'server'], {weak: true});
 
